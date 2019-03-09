@@ -12,7 +12,9 @@ function numberToString(n){
  * @param {number} n
  * @return {number}
  */
-
+function increase(n){
+    return n+1
+}
 
 /**
  * Subtracts one from a given number.
