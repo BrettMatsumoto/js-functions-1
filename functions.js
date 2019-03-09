@@ -70,7 +70,9 @@ function divide(x,y){
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
+function square(x){
+    return x*x
+}
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -89,6 +91,13 @@ function divide(x,y){
  * @return {boolean} `a` is larger than `b`
  */
 
+function isGreaterThan(a,b){
+    if (a > b){
+        return true;
+    } else {
+        return false;
+    }
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -96,7 +105,13 @@ function divide(x,y){
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-
+function isLessThan(a,b){
+    if (a<b){
+        return true;
+    } else {
+        return false;
+    }
+}
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -104,7 +119,11 @@ function divide(x,y){
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-
+function areEqual(){
+    if (a === b){
+        return true;
+    }
+}
 
 /**
  * Returns the smallest value of two numbers.
