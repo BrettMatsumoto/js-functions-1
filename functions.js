@@ -83,6 +83,26 @@ function square(x){
  * @return {number} the result
  */
 
+ function calculate(operation,x,y){
+     if (operation == 'add'){
+         var res = x+y
+         console.log(x + ' + ' + y + ' = ' + res)
+         return res = x + y;
+     } else if (operation == 'subtract'){
+         var res = x-y;
+         console.log(x + ' - ' + y + ' = ' + res)
+         return res = x - y;
+     } else if (operation == 'multiply'){
+         var res = x*y;
+         console.log(x + ' * ' + y + ' = ' + res)
+         return res = x*y;
+     } else if (operation == 'divide'){
+         var res = x/y;
+         console.log(x + ' / ' + y + ' = ' + res)
+         return res = x/y;
+     }
+ }
+
 
 /**
  * Returns true if `a` is greater than `b`.
