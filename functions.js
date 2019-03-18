@@ -211,7 +211,20 @@ function isEven(n){
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
-
+function letterGrade(score,total){
+    var res = Math.floor((score/total)*100);
+    if (res >= 90 && res <= 100){
+        return 'A'
+    } else if (res >= 80 && res <= 89){
+        return 'B'
+    } else if (res >=70 && res <= 79){
+        return 'C'
+    } else if (res >= 60 && res <= 69){
+        return 'D'
+    } else if (res >= 0 && res <= 59){
+        return 'F'
+    }
+}
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
