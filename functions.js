@@ -153,6 +153,13 @@ function areEqual(a, b){
  * @param {number} y
  * @return {number} the smallest number
  */
+function minimum(x,y){
+    if (x < y){
+        return x
+    } else {
+        return y
+    }
+}
 
 
 /**
