@@ -212,7 +212,7 @@ function isEven(n){
  * @return {string} the score represented as a letter grade
  */
 function letterGrade(score,total){
-    var res = Math.floor((score/total)*100);
+    var res = Math.floor((score/total)*100); 
     if (res >= 90 && res <= 100){
         return 'A'
     } else if (res >= 80 && res <= 89){
@@ -235,13 +235,16 @@ function letterGrade(score,total){
  */
 
 
+
 /**
  * Joins two strings with a space.
  * @param {string} word1
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
-
+function combine(word1,word2){
+     return word1.concat(' ' + word2)
+}
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
