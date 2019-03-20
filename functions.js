@@ -233,6 +233,15 @@ function letterGrade(score,total){
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
+function incrementReviews(obj){
+   if (obj.hasOwnProperty('reviews')){
+       obj.reviews += 1;
+       return obj;
+   } else {
+       obj.reviews = 1;
+       return obj;
+   }
+}
 
 
 
