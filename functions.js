@@ -3,8 +3,9 @@
  * @param {number} n
  * @return {string} the number as a string
  */
-function numberToString(n){
-    return n.toString()
+
+let numberToString = (n) => {
+    return n.toString();
 }
 
 /**
@@ -12,8 +13,10 @@ function numberToString(n){
  * @param {number} n
  * @return {number}
  */
-function increase(n){
-    return n+1
+
+let increase = (n) => {
+    n++;
+    return n;
 }
 
 /**
@@ -21,8 +24,10 @@ function increase(n){
  * @param {number} n
  * @return {number}
  */
-function decrease(n){
-    return n-1
+
+let decrease = (n) => {
+    n--;
+    return n;
 }
 
 /**
@@ -31,8 +36,9 @@ function decrease(n){
  * @param {number} y
  * @return {number} the sum
  */
-function add(x,y){
-    return x+y
+
+let add = (x, y) => {
+    return x + y;
 }
 
 /**
@@ -41,8 +47,9 @@ function add(x,y){
  * @param {number} y
  * @return {number} the difference
  */
-function subtract(x,y){
-    return x-y
+
+let subtract = (x, y) => {
+    return x - y;
 }
 
 /**
@@ -51,8 +58,9 @@ function subtract(x,y){
  * @param {number} y
  * @return {number} the product
  */
-function multiply(x,y){
-    return x*y
+
+let multiply = (x, y) => {
+    return x * y;
 }
 
 /**
@@ -61,17 +69,20 @@ function multiply(x,y){
  * @param {number} y
  * @return {number} the quotient
  */
-function divide(x,y){
-    return x/y
+
+let divide = (x, y) => {
+    return x / y;
 }
+
 
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-function square(x){
-    return x*x
+
+let square = (x) => {
+    return Math.pow(x, 2);
 }
 
 /**
@@ -83,26 +94,25 @@ function square(x){
  * @return {number} the result
  */
 
- function calculate(operation,x,y){
-     if (operation == 'add'){
-         var res = x+y
-         console.log(x + ' + ' + y + ' = ' + res)
-         return res = x + y;
-     } else if (operation == 'subtract'){
-         var res = x-y;
-         console.log(x + ' - ' + y + ' = ' + res)
-         return res = x - y;
-     } else if (operation == 'multiply'){
-         var res = x*y;
-         console.log(x + ' * ' + y + ' = ' + res)
-         return res = x*y;
-     } else if (operation == 'divide'){
-         var res = x/y;
-         console.log(x + ' / ' + y + ' = ' + res)
-         return res = x/y;
-     }
- }
-
+let calculate = (operation, x, y) => {
+    if (operation === 'add') {
+        let result = x + y;
+        console.log(`${x} + ${y} = ${result}`);
+        return result;
+    } else if (operation === 'subtract') {
+        let result = x - y;
+        console.log(`${x} - ${y} = ${result}`);
+        return result
+    } else if (operation === 'multiply') {
+        let result = x * y;
+        console.log(`${x} * ${y} = ${result}`);
+        return result;
+    } else {
+        let result = x / y;
+        console.log(`${x} / ${y} = ${result}`);
+        return result;
+    }
+}
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -111,13 +121,10 @@ function square(x){
  * @return {boolean} `a` is larger than `b`
  */
 
-function isGreaterThan(a,b){
-    if (a > b){
-        return true;
-    } else {
-        return false;
-    }
+let isGreaterThan = (a, b) => {
+    return (a > b);
 }
+
 
 /**
  * Returns true if `a` is less than `b`.
@@ -125,12 +132,9 @@ function isGreaterThan(a,b){
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-function isLessThan(a,b){
-    if (a<b){
-        return true;
-    } else {
-        return false;
-    }
+
+let isLessThan = (a, b) => {
+    return (a < b);
 }
 
 /**
@@ -139,12 +143,9 @@ function isLessThan(a,b){
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-function areEqual(a, b){
-    if (a === b){
-        return true;
-    } else {
-        return false;
-    }
+
+let areEqual = (a, b) => {
+    return (a === b);
 }
 
 /**
@@ -153,14 +154,10 @@ function areEqual(a, b){
  * @param {number} y
  * @return {number} the smallest number
  */
-function minimum(x,y){
-    if (x < y){
-        return x
-    } else {
-        return y
-    }
-}
 
+let minimum = (x, y) => {
+    return Math.min(x, y);
+}
 
 /**
  * Returns the largest value of two numbers.
@@ -168,12 +165,9 @@ function minimum(x,y){
  * @param {number} y
  * @return {number} the largest number
  */
-function maximum(x,y){
-    if (x>y){
-        return x
-    } else {
-        return y;
-    }
+
+let maximum = (x, y) => {
+    return Math.max(x, y);
 }
 
 /**
@@ -181,10 +175,9 @@ function maximum(x,y){
  * @param {number} n
  * @return {boolean} the number is even
  */
-function isEven(n){
-    if (n%2 == 0){
-        return true;
-    }
+
+let isEven = (n) => {
+    return (n % 2 === 0);
 }
 
 /**
@@ -193,12 +186,9 @@ function isEven(n){
  * @return {boolean} the number is odd
  */
 
- function isOdd(n){
-     if (n%2 == 1 || n%2 == -1){
-         return true;
-     }
- }
-
+let isOdd = (n) => {
+    return (n % 2 !== 0);
+}
 
 /**
  * Returns a letter grade.
@@ -211,18 +201,20 @@ function isEven(n){
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
-function letterGrade(score,total){
-    var res = Math.floor((score/total)*100); 
-    if (res >= 90 && res <= 100){
-        return 'A'
-    } else if (res >= 80 && res <= 89){
-        return 'B'
-    } else if (res >=70 && res <= 79){
-        return 'C'
-    } else if (res >= 60 && res <= 69){
-        return 'D'
-    } else if (res >= 0 && res <= 59){
-        return 'F'
+
+let letterGrade = (score, total) => {
+    let percentage = Math.floor((score / total) * 100);
+
+    if (percentage >= 90 && percentage <= 100) {
+        return 'A';
+    } else if (percentage >= 80 && percentage <= 89) {
+        return 'B';
+    } else if (percentage >= 70 && percentage <= 79) {
+        return 'C';
+    } else if (percentage >= 60 && percentage <= 69) {
+        return 'D';
+    } else if (percentage >= 0 && percentage <= 59) {
+        return 'F';
     }
 }
 
@@ -233,17 +225,11 @@ function letterGrade(score,total){
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
-function incrementReviews(obj){
-   if (obj.hasOwnProperty('reviews')){
-       obj.reviews += 1;
-       return obj;
-   } else {
-       obj.reviews = 1;
-       return obj;
-   }
+
+let incrementReviews = (restaurant) => {
+    restaurant['reviews'] = (restaurant['reviews'] + 1 || 1);
+    return restaurant;
 }
-
-
 
 /**
  * Joins two strings with a space.
@@ -251,8 +237,10 @@ function incrementReviews(obj){
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
-function combine(word1,word2){
-     return word1.concat(' ' + word2)
+
+let combine = (word1, word2) => {
+    let result = `${word1} ${word2}`
+    return result;
 }
 
 /**
@@ -263,10 +251,11 @@ function combine(word1,word2){
  * @return {object} circle
  */
 
- function createCircle(radius){
-     var obj = {};
-     obj.circumference = 2*Math.PI*radius
-     obj.area = Math.PI * radius * radius
-     return obj;
- }
+let createCircle = (radius) => {
+    let circle = {};
+
+    circle['circumference'] = 2 * Math.PI * radius;
+    circle['area'] = Math.PI * radius * radius;
+    return circle;
+}
 
